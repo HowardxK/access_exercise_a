@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_action :throttle
+  # before_action :throttle
 
   def throttle
     client_ip = request.env["REMOTE_ADDR"]
